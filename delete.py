@@ -12,7 +12,7 @@ def delete():
     data = pd.DataFrame(get_data(selected_table), columns=cols)
     gb = GridOptionsBuilder.from_dataframe(data)
     gb.configure_pagination(paginationAutoPageSize=True)
-    gb.configure_side_bar() #Add a sidebar
+    gb.configure_side_bar() 
     gb.configure_selection('multiple', use_checkbox=True, groupSelectsChildren="Group checkbox select children") #Enable multi-row selection
     gridOptions = gb.build()
 

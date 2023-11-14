@@ -11,10 +11,10 @@ def update():
     selected_id = st.selectbox('Select an id to update', id_col)
     
     df_temp = pd.DataFrame(get_data(selected_table), columns=cols)
-    st.write("DataFrame:", df_temp)  # Add this line to check the DataFrame
+    st.write("DataFrame:", df_temp)  
 
     selected_prev_vals = df_temp[df_temp[cols[1]] == selected_id]
-    st.write("Selected Previous Values:", selected_prev_vals)  # Add this line to check the selected values
+    st.write("Selected Previous Values:", selected_prev_vals) 
     
     if not selected_prev_vals.empty:
         selected_prev_vals = selected_prev_vals.iloc[0]
