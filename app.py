@@ -8,7 +8,7 @@ from write_sql import write_sql
 
 def main():
     st.title("Stock Portfolio Management System!")
-    menu = ["Add", "View", "Edit", "Remove", "Write SQL Code"]
+    menu = ["Add", "View", "Remove", "Write SQL Code"]
     choice = st.sidebar.selectbox("Menu", menu)
     if choice == "Add":
         st.subheader("Add Data")
@@ -16,9 +16,9 @@ def main():
     elif choice == "View":
         st.subheader("View Data")
         read()
-    elif choice == "Edit":
-        st.subheader("Update Data")
-        update()
+    #elif choice == "Edit":
+        #st.subheader("Update Data")
+        #update()
     elif choice == "Remove":
         st.subheader("Delete Data")
         delete()
