@@ -17,7 +17,7 @@ This is a stock portfolio management system that allows users to buy and sell st
 
 ## Screenshots
 <p align="center">
-    <img src="assets/home.jpeg" width="300" height="500" alt="HomePage"/>
+    <img src="assets/home.jpeg" alt="HomePage"/>
 </p>
 
 ## Running the program
